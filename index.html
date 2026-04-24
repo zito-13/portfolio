@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurélien Zito — Développeur Web</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/laptop.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <link rel="stylesheet" href="./assets/css/formulaire.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/typelighterjs@1.0.3/typelighter.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <img src="./assets/images/AZdevLogo.png" alt="">
+        <a href="#contact" class="nav-contact">CONTACT</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <canvas id="canvas"></canvas>
+        <script src="./assets/animation/background.js"></script>
+        <div class="hero-content">
+            <h1><span class="typeWriter" data-max="1" data-checkVisible="true" data-end="999999999"
+                    data-text='["Aurélien Zito"]'></span></h1>
+
+            <p class="hero-title">DÉVELOPPEUR WEB</p>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p class="scroll-text">Défiler pour découvrir mon profil</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="about-card">
+            <div class="about-identity">
+                <div class="identity-header">
+                    <span class="identity-name">Zito Aurélien</span>
+                </div>
+                <div class="identity-row"><i class="fas fa-envelope"></i> <span>zitodev@gmail.com</span></div>
+                <div class="identity-row phone"><i class="fas fa-phone"></i> <span>06.89.02.47.65</span></div>
+                <div class="logo-reseaux">
+                    <div class="identity-row">
+                        <img src="./assets/images/twitter(1).png" alt="twitter">
+                        <img src="./assets/images/instagram(2).png" alt="twitter">
+                        <img src="./assets/images/github(1).png" alt="twitter">
+                        <img src="./assets/images/linkedin.png" alt="twitter">
+                    </div>
+                </div>
+
+                <a href="#" class="cv-btn">Mon CV</a>
+
+            </div>
+            <div class="about-text">
+                <h2><span class="typeWriter" class="highlight" data-checkVisible="true"
+                        data-end="999999999" data-text='["Junior développeur <br> Web &amp; Web mobile"]'></span></h2>
+                <p>
+                    Diplômé de <a href="#" class="school-link">Ri7 - École Supérieure</a> du Développement Logiciel et
+                    de l'IA Je transforme des idées en
+                    applications
+                    web concrètes
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+        <div class="skills-icons">
+            <div class="skill-item">
+                <img src="./assets/images/php.png" alt="php">
+                <img src="./assets/images/html5.png" alt="html5">
+                <img src="./assets/images/css-3.png" alt="css-3">
+                <img src="./assets/images/script-java.png" alt="script-java">
+                <img src="./assets/images/base-de-donnees-mysql.png" alt="base-de-donnees-mysql">
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title"><span class="typeWriter" class="highlight" data-checkVisible="true"
+                data-end="999999999" data-text='["PORTFOLIO"]'></span></h2>
+        <div class="project-card">
+            <div class="project-preview">
+                <div class="preview-screens">
+                    <div class="screen screen-back1"></div>
+                    <div class="screen screen-mid1"></div>
+                    <div class="screen screen-front1"></div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">ElePHPant Social</h3>
+                <p class="project-desc">
+                    Ce mini réseau social prouve la maîtrise de plusieurs compétences clés en
+                    développement web : conception d'une application POO de bout en bout,
+                    gestion d'authentification avec sessions, et implémentation d'un CRUD complet
+                    avec contrôle des droits utilisateur — autant de fondamentaux indispensables
+                    pour un développeur full-stack PHP.
+                </p>
+                <div class="project-tags">
+                    <span class="tag"><i class="fab fa-php"></i></span>
+                    <span class="tag"><i class="fab fa-html5"></i></span>
+                    <span class="tag"><i class="fab fa-css3-alt"></i></span>
+                </div>
+                <a href="#" class="discover-btn">Découvrir le code &gt;</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <div class="project-preview">
+                <div class="preview-screens">
+                    <div class="screen screen-back2"></div>
+                    <div class="screen screen-mid2"></div>
+                    <div class="screen screen-front2"></div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3 class="project-title">ChopLaRousse</h3>
+                <p class="project-desc">
+                    Mini Jeu Labyrinthe — PHP / HTML / CSS <br>
+                    Ce projet a été réalisé dans le cadre d'un exercice imposé lors de la formation de Développeur Web
+                    et Web Mobile. L'objectif était de mettre en pratique les bases du PHP côté serveur en créant un
+                    mini-jeu interactif, tout en consolidant les compétences en HTML et CSS pour le rendu visuel.
+                </p>
+                <div class="project-tags">
+                    <span class="tag"><i class="fab fa-php"></i></span>
+                    <span class="tag"><i class="fab fa-html5"></i></span>
+                    <span class="tag"><i class="fab fa-css3-alt"></i></span>
+                </div>
+                <a href="#" class="discover-btn">Découvrir le code &gt;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <h2 class="section-title"><span class="typeWriter" class="highlight" data-checkVisible="true" data-end="999999999"
+            data-text='["CONTACT"]'></span></h2>
+    <section class="contact" id="contact">
+        <div class="laptop">
+            <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+    }
+    </script>
+            <div class="container">
+                <canvas id="laptop"></canvas>
+            </div>
+            <script type="module" src="./assets/animation/laptop.js"></script>
+        </div>
+        <div id="formulaire-contact">
+            <canvas id="reflet-canvas"></canvas>
+            
+            <form action="post">
+                <label for="mail">Mail</label>
+                <input type="mail" id="mail">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <button type="button">ENVOYER</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Aurélien Zito — AZ Développement</p>
+    </footer>
+
+</body>
+<script src="./assets/animation/badge.js"></script>
+<script src="./assets/animation/formulaire-animation.js"></script>
+
+</html>

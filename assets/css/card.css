@@ -1,0 +1,38 @@
+/* Wrapper parent nécessaire pour la perspective */
+.about-identity-wrapper {
+  perspective: 1000px;
+}
+
+.about-identity {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  position: relative;
+  overflow: hidden; /* pour le glare */
+}
+
+/* Contenu qui "pop" vers l'avant en 3D */
+.about-identity .identity-header,
+.about-identity .identity-row,
+.about-identity .logo-reseaux,
+.about-identity .cv-btn {
+  transform: translateZ(20px);
+  transform-style: preserve-3d;
+}
+
+/* Glare (reflet lumineux) */
+.about-identity .glare {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.25), transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+  z-index: 10;
+}
+
+.about-identity:hover .glare {
+  opacity: 1;
+}
