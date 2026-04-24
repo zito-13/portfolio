@@ -19,20 +19,13 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <img src="./assets/images/AZdevLogo.png" alt="">
-        <a href="#contact" class="nav-contact">CONTACT</a>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero">
+    <!-- HERO / HEADER STICKY -->
+    <header id="sticky-parallax-header">
         <canvas id="canvas"></canvas>
         <script src="./assets/animation/background.js"></script>
         <div class="hero-content">
             <h1><span class="typeWriter" data-max="1" data-checkVisible="true" data-end="999999999"
                     data-text='["Aurélien Zito"]'></span></h1>
-
             <p class="hero-title">DÉVELOPPEUR WEB</p>
             <div class="scroll-indicator">
                 <div class="mouse">
@@ -41,8 +34,9 @@
                 <p class="scroll-text">Défiler pour découvrir mon profil</p>
             </div>
         </div>
-
-    </section>
+        <a href="#contact" class="nav-contact-sticky">CONTACT</a>
+    </header>
+    <script src="./assets/animation/heroanimation.js"></script>
 
 
 

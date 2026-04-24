@@ -69,36 +69,34 @@ body::before {
     z-index: 0;
 }
 
-/* ===== NAVBAR ===== */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+/* ===== STICKY PARALLAX HEADER ===== */
+#sticky-parallax-header {
+    position: relative;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 14px 40px;
-    background: #0A0E2A;
-    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-    z-index: 100;
-
-    img {
-        width: 200px;
-    }
+    justify-content: center;
+    overflow: visible;
+    z-index: 50;
 }
 
-.nav-contact {
+/* Lien contact qui reste visible dans le coin quand le header rétrécit */
+.nav-contact-sticky {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
     color: var(--gold);
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
-    transition: color 0.3s;
+    transition: opacity 0.3s;
+    z-index: 10;
 }
 
-.nav-contact:hover {
-    color: var(--gold);
+.nav-contact-sticky:hover {
+    opacity: 0.75;
 }
 
 /* ===== CANVAS MATRIX ===== */
@@ -130,6 +128,8 @@ body::before {
 h1 {
     font-size: 100px;
     font-family: 'Playfair Display', serif;
+    white-space: nowrap;
+    line-height: 1;
 }
 
 .hero {
@@ -138,7 +138,6 @@ h1 {
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-top: 80px;
     z-index: 1;
     overflow: hidden;
 }
@@ -168,6 +167,10 @@ h1 {
 .hero-content {
     text-align: center;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
 }
 
 .hero-title {
