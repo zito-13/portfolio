@@ -225,9 +225,9 @@ h1 {
     padding: 200px 40px;
     display: flex;
     justify-content: space-evenly;
-    
-    
-   
+
+
+
 
     .about-card {
         display: flex;
@@ -442,6 +442,7 @@ h1 {
         background-size: contain;
 
     }
+
     .screen-back2 {
         width: 150px;
         height: 70px;
@@ -532,20 +533,132 @@ h1 {
 
 }
 
+.project-fichier {
+    display: flex;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+    align-items: flex-start;
+
+
+    .section-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        color: var(--gold);
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+
+    .project-preview {
+        flex-shrink: 0;
+        padding: 20px;
+    }
+
+    .preview-screens {
+        position: relative;
+        width: 130px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .screen {
+        position: absolute;
+        border-radius: 4px;
+        background: rgba(30, 50, 90, 0.8);
+        border: 1px solid rgba(100, 130, 200, 0.3);
+    }
+
+    .project-info {
+        background: rgba(15, 25, 50, 0.5);
+        border: 1px solid rgba(100, 130, 200, 0.15);
+        border-radius: 12px;
+        padding: 30px;
+    }
+
+    .project-info h3.project-title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3rem;
+        color: var(--gold);
+        margin-bottom: 14px;
+        display: flex;
+        gap: 10px;
+        img{
+            width: 30px;
+        }
+    }
+
+    .project-desc {
+        font-size: 13px;
+        line-height: 1.8;
+        color: var(--text-muted);
+        margin-bottom: 18px;
+    }
+
+    .project-tags {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .tag {
+        font-size: 1.1rem;
+    }
+
+    .tag .fa-php {
+        color: #8892bf;
+    }
+
+    .tag .fa-html5 {
+        color: #e34f26;
+    }
+
+    .tag .fa-css3-alt {
+        color: #1572b6;
+    }
+
+    .tag .fa-js {
+        color: #f7df1e;
+    }
+
+    .discover-btn {
+        display: flex;
+        justify-content: end;
+        color: var(--text-muted);
+        font-size: 12px;
+        text-decoration: none;
+        letter-spacing: 1px;
+        transition: color 0.3s;
+        border-bottom: 1px dotted var(--text-muted);
+        padding-bottom: 2px;
+    }
+
+    .discover-btn:hover {
+        color: var(--gold);
+        border-color: var(--gold);
+    }
+}
 
 /* ===== CONTACT ===== */
-.section-title{
+.section-title {
     display: flex;
     justify-content: center;
     font-size: 50px;
     font-family: 'Playfair Display', serif;
     color: var(--gold);
     margin-bottom: 80px;
+    margin-top: 200px;
 }
+
 .contact {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 80px 40px;
     text-align: center;
     position: relative;
