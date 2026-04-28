@@ -799,3 +799,7 @@ h1 {
         font-size: clamp(1.125rem, 5.5vw, 2rem) !important;
     }
 }
+
+#canvas{
+    max-width: 100%;
+}
