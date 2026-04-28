@@ -22,7 +22,7 @@ function randomParticle(forceRandom = true) {
         vx: (Math.random() - 0.5) * 0.4,
         vy: -(Math.random() * 0.3 + 0.1),
         opacity: Math.random() * 0.5 + 0.2,
-        size: Math.random() * 4 + 10,
+        size: Math.random() * 10 + 20,
         oscillation: Math.random() * Math.PI * 2,
         oscillationSpeed: Math.random() * 0.005 + 0.002,
         oscillationAmp: Math.random() * 0.3 + 0.1,
