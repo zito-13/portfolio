@@ -735,3 +735,687 @@ h1 {
         display: none;
     }
 }
+
+/* ============================================================
+   RESPONSIVE.CSS — Tous types d'écrans
+   Breakpoints :
+     xs  : < 480px     (petits mobiles)
+     sm  : 480–767px   (mobiles)
+     md  : 768–1023px  (tablettes)
+     lg  : 1024–1279px (petits desktops)
+     xl  : ≥ 1280px    (grands écrans — styles de base dans style.css)
+   ============================================================ */
+
+/* ===== VARIABLES UTILITAIRES ===== */
+:root {
+    --container-pad: clamp(16px, 5vw, 80px);
+}
+
+/* ============================================================
+   COLUMN LAYOUT — ≤ 1200px
+   Tout passe en colonne dès 1200px
+   ============================================================ */
+@media (max-width: 1200px) {
+
+    /* ── ABOUT ── */
+    .about {
+        flex-direction: column;
+        align-items: center;
+        padding: 100px var(--container-pad);
+    }
+
+    .about .about-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        max-width: 700px;
+        width: 100%;
+    }
+
+    .about .about-identity {
+        width: 100%;
+        max-width: 700px;
+        min-width: unset;
+        box-sizing: border-box;
+    }
+
+    .about .about-text {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .about .cv-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ── SKILLS ── */
+    .skills .skill-item {
+        padding: 0 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    /* ── PORTFOLIO ── */
+    .portfolio {
+        padding: 100px var(--container-pad);
+    }
+
+    .portfolio .project-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio .project-preview {
+        align-self: center;
+    }
+
+    .portfolio .project-info {
+        width: 100%;
+    }
+
+    /* ── PROJECT FICHIER ── */
+    .project-fichier {
+        flex-direction: column;
+        padding: 20px var(--container-pad);
+        gap: 20px;
+    }
+
+    .project-fichier .project-info {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ── CONTACT ── */
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px var(--container-pad);
+    }
+
+    .laptop {
+        width: 100%;
+        max-width: 600px;
+        height: 320px;
+    }
+
+    #formulaire-contact {
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+    }
+
+    #formulaire-contact form input,
+    #formulaire-contact form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ============================================================
+   LARGE — 1024–1279px
+   ============================================================ */
+@media (max-width: 1279px) {
+
+    h1 {
+        font-size: clamp(48px, 7vw, 90px);
+    }
+
+    .hero-title {
+        font-size: clamp(20px, 3vw, 36px);
+    }
+
+    /* About */
+    .about {
+        padding: 120px var(--container-pad);
+    }
+
+    .about .about-card {
+        gap: 80px;
+    }
+
+    .about .about-identity {
+        width: 280px;
+        min-width: 220px;
+    }
+
+    /* Skills */
+    .skills .skill-item {
+        padding: 0 80px;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding: 100px var(--container-pad);
+    }
+
+    .project-fichier {
+        padding: 20px var(--container-pad);
+    }
+}
+
+/* ============================================================
+   MEDIUM — 768–1023px (Tablettes)
+   ============================================================ */
+@media (max-width: 1023px) {
+
+    /* Hero / Header */
+    h1 {
+        font-size: clamp(36px, 6.5vw, 70px);
+    }
+
+    .hero-title {
+        font-size: clamp(14px, 2.5vw, 28px);
+        letter-spacing: 4px;
+    }
+
+    .nav-contact-sticky {
+        font-size: 16px;
+        right: 20px;
+    }
+
+    /* About */
+    .about {
+        padding: 80px var(--container-pad);
+    }
+
+    .about .about-card {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .about .about-identity {
+        width: 100%;
+        max-width: 500px;
+        min-width: unset;
+    }
+
+    .about .identity-header {
+        font-size: 28px;
+    }
+
+    .about .about-text h2 {
+        font-size: 36px;
+    }
+
+    .about .about-text p {
+        font-size: 17px;
+    }
+
+    /* Skills */
+    .skills {
+        padding: 20px var(--container-pad);
+    }
+
+    .skills .skill-item {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .skills .skill-item img {
+        width: 40px;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding: 80px var(--container-pad);
+    }
+
+    .portfolio .project-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .portfolio .project-preview {
+        align-self: center;
+    }
+
+    /* project-fichier : 2 colonnes en tablette */
+    .project-fichier {
+        padding: 16px var(--container-pad);
+        flex-direction: column ;
+        gap: 20px;
+    }
+
+    .project-fichier .project-info {
+        flex: 1 1 calc(50% - 20px);
+        min-width: 260px;
+    }
+
+    /* Contact section */
+    .section-title {
+        font-size: 36px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 40px var(--container-pad);
+    }
+
+    .laptop {
+        width: 100%;
+        max-width: 500px;
+        height: 300px;
+    }
+
+    #formulaire-contact {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* ============================================================
+   SMALL — 480–767px (Mobiles larges)
+   ============================================================ */
+@media (max-width: 767px) {
+
+    /* Hero */
+    h1 {
+        font-size: clamp(28px, 8vw, 52px);
+        white-space: normal !important;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 13px;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .binary-left,
+    .binary-right {
+        display: none;
+    }
+
+    .nav-contact-sticky {
+        font-size: 13px;
+        right: 12px;
+        letter-spacing: 1px;
+    }
+
+    .scroll-indicator {
+        gap: 6px;
+    }
+
+    .scroll-text {
+        font-size: 11px;
+    }
+
+    /* ── ABOUT ── */
+    .about {
+        padding: 60px 16px;
+        flex-direction: column;      /* ← section en colonne */
+        align-items: center;
+    }
+
+    .about .about-card {
+        flex-direction: column;      /* ← card en colonne */
+        gap: 30px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about .about-identity {
+        width: 100%;
+        max-width: 100%;
+        min-width: unset;
+        box-sizing: border-box;
+    }
+
+    .about .about-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .about .identity-header {
+        font-size: 22px;
+    }
+
+    .about .identity-row {
+        font-size: 16px;
+    }
+
+    .about .cv-btn {
+        font-size: 15px;
+        padding: 7px 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about .about-text p {
+        font-size: 15px;
+    }
+
+    /* ── SKILLS ── */
+    .skills {
+        padding: 16px;
+    }
+
+    .skills .skill-item {
+        flex-direction: row;         /* icônes restent en ligne, juste centrées */
+        flex-wrap: wrap;
+        padding: 0;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .skills .skill-item img {
+        width: 36px;
+    }
+
+    /* ── PORTFOLIO ── */
+    .portfolio {
+        padding: 60px 16px;
+    }
+
+    .portfolio .section-title {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio .project-card {
+        flex-direction: column;      /* ← image + texte en colonne */
+        align-items: center;
+        padding: 20px;
+    }
+
+    .portfolio .project-preview {
+        align-self: center;
+    }
+
+    .portfolio .project-info {
+        width: 100%;
+    }
+
+    .portfolio .preview-screens {
+        width: 110px;
+        height: 90px;
+    }
+
+    .portfolio .screen-back1,
+    .portfolio .screen-mid1,
+    .portfolio .screen-front1,
+    .portfolio .screen-back2,
+    .portfolio .screen-mid2,
+    .portfolio .screen-front2 {
+        width: 110px;
+        height: 55px;
+    }
+
+    /* ── PROJECT FICHIER ── */
+    .project-fichier {
+        flex-direction: column;      /* ← cartes fichier en colonne */
+        padding: 12px 16px;
+        gap: 16px;
+    }
+
+    .project-fichier .project-info {
+        width: 100%;
+        flex: unset;
+        box-sizing: border-box;
+    }
+
+    /* ── TIMELINE ── */
+    .timeline-line {
+        left: -16px;
+    }
+
+    .project-card::before {
+        left: -24px;
+        width: 12px;
+        height: 12px;
+    }
+
+    /* ── CONTACT ── */
+    .section-title {
+        font-size: 28px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding: 0 16px;
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;      /* ← laptop + formulaire en colonne */
+        align-items: center;
+        gap: 30px;
+        padding: 20px 16px;
+    }
+
+    .laptop {
+        height: 220px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #formulaire-contact {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+
+    #formulaire-contact form {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    #formulaire-contact form input,
+    #formulaire-contact form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #formulaire-contact form textarea {
+        height: 90px;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+        font-size: 11px;
+        padding: 16px;
+    }
+}
+
+/* ============================================================
+   EXTRA SMALL — < 480px (Petits mobiles)
+   ============================================================ */
+@media (max-width: 479px) {
+
+    h1 {
+        font-size: clamp(24px, 9vw, 40px);
+    }
+
+    .hero-title {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .nav-contact-sticky {
+        font-size: 11px;
+        right: 8px;
+    }
+
+    /* About */
+    .about {
+        padding: 40px 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about-card {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about .about-text h2 {
+        font-size: 22px;
+    }
+
+    .about .identity-header {
+        font-size: 18px;
+    }
+
+    .about .cv-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Skills */
+    .skills .skill-item img {
+        width: 28px;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding: 40px 12px;
+    }
+
+    .portfolio .project-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 14px;
+    }
+
+    .portfolio .project-info {
+        width: 100%;
+    }
+
+    .portfolio .project-title {
+        font-size: 1.1rem !important;
+    }
+
+    .portfolio .project-desc {
+        font-size: 12px;
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .project-card::before {
+        display: none;
+    }
+
+    /* project-fichier */
+    .project-fichier {
+        flex-direction: column;
+        padding: 8px 12px;
+        gap: 12px;
+    }
+
+    .project-fichier .project-info {
+        width: 100%;
+        padding: 18px 14px;
+        box-sizing: border-box;
+    }
+
+    /* Contact */
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .laptop {
+        height: 180px;
+        width: 100%;
+    }
+
+    #formulaire-contact {
+        width: 100%;
+        padding: 14px 12px;
+        box-sizing: border-box;
+    }
+
+    #formulaire-contact form input,
+    #formulaire-contact form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ============================================================
+   HERO ANIMATION — Overrides responsive pour scroll animation
+   (heroanimation.js anime le h1 avec des valeurs absolues,
+    on les corrige pour les petits écrans)
+   ============================================================ */
+@media (max-width: 767px) {
+    /* On désactive les overrides JS de white-space avec !important déjà fait.
+       On compense le marginLeft qui serait trop grand sur mobile. */
+    #sticky-parallax-header h1 {
+        font-size: clamp(22px, 7vw, 44px) !important;
+    }
+}
+
+/* ============================================================
+   ACCESSIBILITÉ & PRÉFÉRENCES SYSTÈME
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .wheel {
+        animation: none;
+    }
+}
+
+/* ============================================================
+   IMPRESSION
+   ============================================================ */
+@media print {
+    canvas,
+    .laptop,
+    #reflet-canvas,
+    .scroll-indicator,
+    .nav-contact-sticky,
+    .binary-left,
+    .binary-right {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    h1, .hero-title {
+        color: black;
+    }
+
+    .about .about-identity,
+    .portfolio .project-card,
+    .project-fichier .project-info {
+        border: 1px solid #ccc;
+        background: white;
+    }
+
+    .footer {
+        border-top: 1px solid #ccc;
+        color: #333;
+    }
+}
