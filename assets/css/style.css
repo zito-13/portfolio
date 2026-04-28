@@ -756,11 +756,11 @@ h1 {
 
     /* ── HERO ── */
     h1 {
-        font-size: clamp(52px, 7.5vw, 92px);
+        font-size: clamp(80px, 10vw, 160px);
     }
 
     .hero-title {
-        font-size: clamp(24px, 3.2vw, 40px);
+        font-size: clamp(50px, 6vw, 80px);
         letter-spacing: 5px;
     }
 
@@ -775,27 +775,27 @@ h1 {
         flex-direction: column;
         align-items: center;
         gap: 50px;
-        max-width: 720px;
+        max-width: 900px;
         width: 100%;
     }
 
     .about .about-identity {
         width: 100%;
-        max-width: 720px;
+        max-width: 900px;
         min-width: unset;
         box-sizing: border-box;
     }
 
     .about .identity-header {
-        font-size: 44px;
+        font-size: 88px;
     }
 
     .about .identity-row {
-        font-size: 22px;
+        font-size: 40px;
     }
 
     .about .cv-btn {
-        font-size: 20px;
+        font-size: 38px;
         padding: 10px 24px;
         width: 100%;
         text-align: center;
@@ -803,15 +803,15 @@ h1 {
 
     .about .about-text {
         width: 100%;
-        max-width: 720px;
+        max-width: 900px;
     }
 
     .about .about-text h2 {
-        font-size: 54px;
+        font-size: 100px;
     }
 
     .about .about-text p {
-        font-size: 22px;
+        font-size: 40px;
     }
 
     /* ── SKILLS ── */
@@ -823,16 +823,16 @@ h1 {
     }
 
     .skills .skill-item img {
-        width: 58px;
+        width: 90px;
     }
 
     /* ── SECTION TITLES ── */
     .section-title {
-        font-size: 56px;
+        font-size: 100px;
     }
 
     .portfolio .section-title {
-        font-size: 48px;
+        font-size: 90px;
     }
 
     /* ── PORTFOLIO ── */
@@ -854,16 +854,16 @@ h1 {
     }
 
     .portfolio .project-title {
-        font-size: 1.7rem !important;
+        font-size: 3rem !important;
     }
 
     .portfolio .project-desc {
-        font-size: 16px;
+        font-size: 28px;
         line-height: 1.9;
     }
 
     .portfolio .discover-btn {
-        font-size: 15px;
+        font-size: 26px;
     }
 
     /* ── PROJECT FICHIER ── */
@@ -879,16 +879,16 @@ h1 {
     }
 
     .project-fichier .project-title {
-        font-size: 1.7rem !important;
+        font-size: 3rem !important;
     }
 
     .project-fichier .project-desc {
-        font-size: 16px;
+        font-size: 28px;
         line-height: 1.9;
     }
 
     .project-fichier .discover-btn {
-        font-size: 15px;
+        font-size: 26px;
     }
 
     /* ── CONTACT ── */
@@ -915,15 +915,15 @@ h1 {
     #formulaire-contact form textarea {
         width: 100%;
         box-sizing: border-box;
-        font-size: 16px;
+        font-size: 28px;
     }
 
     #formulaire-contact label {
-        font-size: 16px;
+        font-size: 28px;
     }
 
     #formulaire-contact button {
-        font-size: 16px;
+        font-size: 28px;
         padding: 12px;
     }
 }
